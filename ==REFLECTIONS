@@ -1,0 +1,9 @@
+Day 6 12/02
+-Pascal's triangle can be formed using dynamic rpogrammming.
+ for n>c the value will be 0.
+ rest elements can be formed using:
+ elemnt[n][c]=arr[n][c]=arr[n-1][c-1]+arr[n-1][c];
+-memory in dynamic programming is =n*k where n is the size of array and k is the data type;
+Kadle's algorithm
+-Kadale's Algorithm works only if there is a mixture of both positive and negative elements. 
+
