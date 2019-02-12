@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+
+int main(){
+    int count;
+    int start;
+    int stop;
+    int lastn=0;
+    int curno=1;
+    int fib[52];
+    bool isprime=true;
+    memset(fib,0, sizeof(fib));
+    scanf("%d",&count);
+    scanf("%d %d",&start,&stop);
+    fib[0]=lastn;
+    fib[1]=curno;
+    for (int i = 2; i <=count ; ++i) {
+
+        fib[i]=lastn+curno;
+        lastn=fib[i-1];
+        curno=fib[i];
+    }
+        lastn=0;
+    for (int i = start; i <=stop ; ++i) {
+            curno=fib[i];
+       if(curno== 1|| curno==2)
+           lastn=curno+lastn;
+       else{
+
+           for (int j = 2; j <=curno/2 ; ++j) {
+
+               if(curno%j==0)
+               {isprime=false;
+              // printf("Prinme no is %d ",curno);
+                   break;}
+
+
+           }
+           if(isprime==true)
+               lastn=curno+lastn;
+
+       }
+            isprime=true;
+    }
+
+    printf("%d",lastn);
+
+}
