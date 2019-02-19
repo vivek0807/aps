@@ -1,3 +1,7 @@
+==REFLECTIONS==
+BITWISE:
+1. >> operator right shifts the bits. Doing right shift is equivalent to dividing the operand number by 2^n bits.
+   << operaor left shifts the bits. Equivalent to multiplying the number by 2^n
 Day 6 12/02
 -Pascal's triangle can be formed using dynamic rpogrammming.
  for n>c the value will be 0.
