@@ -9,5 +9,38 @@ Day 6 12/02
  elemnt[n][c]=arr[n][c]=arr[n-1][c-1]+arr[n-1][c];
 -memory in dynamic programming is =n*k where n is the size of array and k is the data type;
 Kadle's algorithm
--Kadale's Algorithm works only if there is a mixture of both positive and negative elements. 
+-Kadale's Algorithm works only if there is a mixture of both positive and negative elements.
 
+=>dynamic programming using 2D array:
+   -algorithming storage of values in array
+   -one time computation and multiple aplication
+   -Can Also have application for recurssion.
+--- Recursive Approach uses more memory.
+==>Look Up Table:
+   Can be used to store calaculated values as for faster searching.
+   Efficiency:
+   fetch O(1),Time O(N^2) and space O(N^2).
+   Is generally a 1-D array
+   
+==>Square root decomposition:
+   --It is a query optimization technique that reduces time complexity by a factor of sqrt(n)
+   --reduces the main array at the size of sqrt(n)
+   --query efficency O(n)
+   --Time & space efficiency are  O(N)
+   
+==> Skip List:
+   --A linked list based data structure that is used to process query.
+   -- It is hierachy based linked list and each layer acts as express lane for the below layer
+   -contains log1/p n lists
+   -insert nd fetch efficiency O(N)
+   -space O(n log n)
+   
+==> Segmentation Tree:
+   --Basically a binary tree
+   --Generally used for calcluating the sum within a range of a given array
+      each node represernt a sum within a range
+   --Query takes O(1) coplexity
+   --Update takes O(n) complexity
+   
+   
+ 
